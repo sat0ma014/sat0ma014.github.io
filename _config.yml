@@ -18,14 +18,14 @@ avatar: https://pbs.twimg.com/profile_images/1265422036928589824/C0gsMiqY_400x40
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email:
+  email:satomakoto@gmail.com
   facebook:
   flickr:
   github: sat0ma014
   instagram:
   linkedin:
   pinterest:
-  rss: # just type anything here for a working RSS icon
+  rss: enable # just type anything here for a working RSS icon
   twitter: satomakoto14
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
