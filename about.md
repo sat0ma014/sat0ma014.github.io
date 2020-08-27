@@ -1,14 +1,17 @@
+
 ---
 layout: page
 title: About
 permalink: /about/
 ---
 
-Some information about you!
+##me 
+st0ma014。 
+##好き:  
 
-### More Information
+ コード,駄文,散文を書く。  
 
-A place to include any other types of information that you'd like to include about yourself.
+ 身の回りのありとあらゆるものをカスタマイズ。  
 
 ### Contact me
 
