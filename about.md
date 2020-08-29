@@ -1,4 +1,3 @@
-
 ---
 layout: page
 title: About
@@ -6,7 +5,7 @@ permalink: /about/
 ---
 
 ##me 
-st0ma014。 
+sat0ma014。 
 ##好き:  
 
  コード,駄文,散文を書く。  
