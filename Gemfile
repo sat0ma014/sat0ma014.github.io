@@ -13,9 +13,7 @@ group :jekyll_plugins do
       gem "jekyll-archives"
       gem "jekyll-mentions"
       gem "jekyll-redirect-from"
-      gem "jekyll-sitemap"
       gem "jekyll-gist"
       gem "jekyll-coffeescript"
       gem "jekyll-assets"
-      gem "another-jekyll-plugin"
 end
