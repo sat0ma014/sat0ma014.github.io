@@ -83,6 +83,7 @@ gems:
   - jekyll-coffeescript
   - jekyll-assets
   - another-jekyll-plugin
+  - jekyll-gist-it-tag
 
 # Exclude these files from your production _site
 exclude:
