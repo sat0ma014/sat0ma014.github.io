@@ -10,14 +10,11 @@ $violet:#AE81FF;
 
 .highlight{
   width: 97%;
-  margin: 10px auto;
+  margin: none;
   font-size: 16px;
   line-height: 1.2em;
   background-color: $background;
   color:$original;
-  padding: 10px;
-  box-shadow: 3px 3px 12px 3px $background;
-  border-radius: 10px;
   .lineno{
     margin: 3px;
     font-size: 16px;
