@@ -29,6 +29,10 @@
           <nav>
             <a href="{{ site.baseurl }}/">Blog</a>
             <a href="{{ site.baseurl }}/about">About</a>
+            <a href="{{ site.baseurl }}/guide">Guide</a>
+            <a href="{{ site.baseurl }}/{{ page.date | date: "%Y" }}">{{ page.date | date: "%Y" }}</a>
+            <a href="{{ site.baseurl }}/{{ page.date | date: "%Y/%m" }}">{{ page.date | date: "%m" }}</a>
+            <a href="{{ site.baseurl }}/{{ page.date | date: "%Y/%m/%d" }}">{{ page.date | date: "%d" }}</a>
           </nav>
         </header>
       </div>
