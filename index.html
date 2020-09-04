@@ -5,10 +5,12 @@ layout: default
 <div class="posts">
   {% for post in site.posts %}
     <article class="post">
-
+      <span>
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+      <a href='{{ site.baseurl }}/{{ post.date | date: "%Y/%m/%d"}}'><span style="float: right">{{ post.date | date: "%Y年%m月%d日" }}</span></a>
+      </span>
 
-      <div class="entry">
+      <div class="entry" style="clear: right">
         {{ post.excerpt }}
       </div>
 
