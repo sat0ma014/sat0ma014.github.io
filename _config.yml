@@ -82,7 +82,7 @@ gems:
   - jekyll-gist
   - jekyll-coffeescript
   - jekyll-assets
-  - another-jekyll-plugin
+  - jekyll-mermaid
 
 # Exclude these files from your production _site
 exclude:
