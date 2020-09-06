@@ -17,4 +17,8 @@ group :jekyll_plugins do
       gem "jekyll-coffeescript"
       gem "jekyll-assets"
       gem "jekyll-mermaid"
+      gem "jekyll-toc"
+      gem "jekyll-youtube"
+      gem "jekyll-amazon"
+      gem "jekyll-twitter-plugin"
 end
