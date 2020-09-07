@@ -6,20 +6,22 @@ permalink: /guide/
 
 ## sample-post
 
-{% raw %}
 {% gist-it https://github.com/sat0ma014/sat0ma014.github.io/blob/master/templete.md %}
-{% endraw %}
 
 ## gist
 
 {% highlight text %}
-``{% gist id %}``
+{% raw %}
+{% gist id %}
+{% endraw %}
 {% endhighlight %}
 
 ## gist-it
 
 {% highlight text %}
-`{% gist-it URL %}`
+{% raw %}
+{% gist-it URL %}
+{% endraw %}
 {% endhighlight %}
 
 ## Blog card
