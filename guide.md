@@ -13,9 +13,10 @@ toc: true
 {% endhighlight %}
 3. プラグインを動作させるために、
   * Gemfileを作成
-{%%}
-{%%}
-  * Github Actionを設定{%%}{%%}
+{% gist_it http://github.com/sat0ma014.github.io/blob/master/Gemfile %}
+
+  * Github Actionを設定
+{% gist_it .github/workflows/github-pages.yml %}
 4. _includes/JB をjekyll-bootstrapから流用
 
 ## 各パーツの解説
