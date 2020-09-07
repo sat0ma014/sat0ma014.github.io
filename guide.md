@@ -22,7 +22,7 @@ toc: true
 
 ### sample-post
 
-{% gist-it https://github.com/sat0ma014/sat0ma014.github.io/blob/master/templete.md %}
+{% gist_it https://github.com/sat0ma014/sat0ma014.github.io/blob/master/templete.md %}
 
 ### gist
 
@@ -36,7 +36,7 @@ toc: true
 
 {% highlight text %}
 {% raw %}
-{% gist-it URL %}
+{% gist_it URL %}
 {% endraw %}
 {% endhighlight %}
 
