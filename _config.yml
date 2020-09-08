@@ -87,6 +87,13 @@ gems:
   - jekyll-youtube
   - jekyll-amazon
   - jekyll-twitter-plugin
+  - jekyll-codepen
+
+codepen:
+  theme: 11473
+  height: 300
+  preview: false
+  default_tab: result
 
 # Exclude these files from your production _site
 exclude:
