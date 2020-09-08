@@ -1,0 +1,79 @@
+<head>
+  <meta charset="utf-8">
+  	<title>Share-Button</title>
+    <style>
+a[class*="entypo-"]:before,
+span[class*="entypo-"]:before {
+	font-family: 'entypo', sans-serif;
+}
+
+body {
+	background: #f9f9f9;
+	color: #151515;
+	font: 100%/1.5em sans-serif;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.clearfix { *zoom: 1; }
+.clearfix:before,
+.clearfix:after {
+	content: "";
+	display: table;	
+}
+.clearfix:after { clear: both; }
+
+.container {
+	height: 64px;
+	left: 50%;
+	margin: -32px 0 0 -152px;
+	position: absolute;
+	top: 50%;
+	width: 304px;
+}
+    </style>
+    <script>(function() {
+
+	$('.share').on('click', function(e) {
+
+		e.preventDefault();
+
+		var $this = $(this);
+
+		$this.animate({
+			'width': $this.width() == 304 ? '64px' : '304px'
+		}, 300, 'swing');
+
+	});
+
+} () );
+    </script>
+</head>
+
+<body>
+  	<div class="container">
+    <ul class="btn-share clearfix">
+      <li>
+        <a href="#" class="button share entypo-share"></a>
+      </li>
+      			<li>
+        <a href="https://twitter.com/berkpw" class="button twitter entypo-twitter" target="_blank"></a>
+      </li>
+			      <li>
+        <a href="https://www.facebook.com/share.php?u=" class="button facebook entypo-facebook" target="_blank"></a>
+      </li>
+			      <li>
+        <a href="https://plus.google.com/" class="button google entypo-gplus" target="_blank"></a>
+      </li>
+    </ul>
+  </div>	
+</body>

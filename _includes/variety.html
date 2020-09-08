@@ -1,0 +1,132 @@
+<style>$fbBlue: #3b5998;
+$ytRed: #b00;
+$twBlue: #55acee;
+$igBlue: #125688;
+$ghBlack: #000;
+$cpBlack: #000;
+$scOrange: #f50;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: rgb(200,70,90);
+}
+
+#social-container {
+  width: 410px;
+  background: rgba(255,255,255,0.1);
+  padding: 20px;
+  text-align: center;
+  margin: 0 auto;
+display: block;
+  margin-top: 25vh;
+}
+
+.social-button {
+  color: white;
+  display: inline-block;
+  padding: 5px;
+  vertical-align: middle;
+  text-align: center;
+  min-width: 38px;
+  width: 38px;
+  height: 38px;
+  position: relative;
+  line-height: 28px;
+  overflow: hidden;
+  white-space: nowrap;
+
+  transition: width 300ms ease;
+  -webkit-transition: width 300ms ease;
+
+  i {
+    vertical-align: middle;
+    position: relative;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+  }
+  
+  span {
+    display: inline-block;
+    font-family: Geneva, Helvetica, sans-serif;
+    font-size: 16px;
+    vertical-align: middle;
+    position: relative;
+    margin-left: 5px;
+    margin-right: 5px;
+
+    transition: width 300ms ease;
+  }
+
+  &.fb {
+    background: $fbBlue;
+  }
+  &.yt {
+    background: $ytRed;
+  }
+  &.tw {
+    background: $twBlue;
+  }
+  &.sc {
+    background: $scOrange;
+  }
+  &.ig {
+    background: $igBlue;
+  }
+  &.cp {
+    background: $cpBlack;
+  }
+  &.gh {
+    background: $ghBlack;
+  }
+}
+</style>
+
+
+<div id="social-container">
+  <a href="#">
+    <div class="social-button fb">
+      <i class="fa fa-facebook fa-lg"></i><span>Facebook</span>
+    </div>
+  </a>
+  <!--
+  --><a href="#">
+    <div class="social-button cp">
+      <i class="fa fa-codepen fa-lg"></i><span>CodePen</span>
+    </div>
+  </a>
+  <!--
+  --><a href="#">
+    <div class="social-button yt">
+      <i class="fa fa-youtube fa-lg"></i><span>YouTube</span>
+    </div>
+  </a>
+  <!--
+  --><a href="#">
+    <div class="social-button tw">
+      <i class="fa fa-twitter fa-lg"></i><span>Twitter</span>
+    </div>
+  </a>
+  <!--
+  --><a href="#">
+    <div class="social-button sc">
+      <i class="fa fa-soundcloud fa-lg"></i><span>SoundCloud</span>
+    </div>
+  </a>
+  <!--
+  --><a href="#">
+    <div class="social-button ig">
+      <i class="fa fa-instagram fa-lg"></i><span>Instagram</span>
+    </div>
+  </a>
+  <!--
+  --><a href="#">
+    <div class="social-button gh">
+      <i class="fa fa-github fa-lg"></i><span>GitHub</span>
+    </div>
+  </a>
+</div>
