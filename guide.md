@@ -70,3 +70,7 @@ toc: true
 {% include blogcard.html site="sole-color-blog.com" url="https://sole-color-blog.com/blog/668/" image="https://sole-color-blog.com/manage/wp-content/uploads/2016/04/Social-Icons-again.gif" title="コピペOK! 個性的なSNSボタン／シェアボタンのデザインまとめ | それからデザイン スタッフブログ" desc="ブログやwebマガジン、キャンペーンサイトまでさまざまなサイトに設置されるFacebookやTwitterなどのSNSボタン／シェアボタン。今回はフロンドエンド..." %}
 {% codepen https://codepen.io/berkaltiok/pen/LpbLmx %}
 {% codepen https://codepen.io/sderoij/pen/oxoMRW %}
+
+### font-awesome
+
+{% include blogcard.html site="whiskers.nukos.kitchen" url="https://whiskers.nukos.kitchen/2014/10/11/jekyll_liquid_tag_font_awesome.html" image="http://whiskers.nukos.kitchen/assets/images/ogp.png" title="[Jekyll][Ruby]jekyllでFontAwesomeアイコンを表示するLiquid Tagを作った" desc="jekyllの記事内でHTML書きたくないなーって時にLiquid Tagを作る方法の紹介です。今回はFont Awesomeアイコンを表示するLiquid Tagプラグインを作ってみました。" %}

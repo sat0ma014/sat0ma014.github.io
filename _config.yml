@@ -120,3 +120,5 @@ jekyll-archives:
     category: '/category/:name/'
 gist:
     noscript: false
+fa_prefix: #default: fa
+fa_exclude:
