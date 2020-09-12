@@ -121,4 +121,6 @@ jekyll-archives:
 gist:
     noscript: false
 fa_prefix: #default: fa
-fa_exclude:
+fa_exclude: #
+mermaid:
+  src: 'assets/mermaid.js'
