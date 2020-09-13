@@ -16,7 +16,7 @@ tags: javascript library mermaid markdown diagram
 {% toc %}
 # 記法
 ### ノード（接続点）
-{% mermaid %}
+```mermaid
 graph TD
     ノード
     ノード1[テキスト入りノード]
@@ -24,7 +24,7 @@ graph TD
     ノード3((円形ノード))
     ノード4>非対称形ノード]
     ノード5{ひし形ノード}
-{% endmermaid %}
+```
 {% highlight mermaid %}
 graph TD
     ノード
@@ -47,7 +47,7 @@ graph TD
 |特殊文字コード使用||
 |特殊文字詳細は、こちら||
 |特殊文字変換ツールはこちら||
-{% mermaid %}
+```mermaid
 graph TD
     鈴木-->田中
     佐藤---高橋
@@ -55,7 +55,7 @@ graph TD
     中村-->|好き|山本
     小林-.->加藤
     佐々木-.気になる.->山田
-{% endmermaid %}
+```
 {% highlight mermaid %}
 graph TD
     鈴木-->田中
@@ -66,12 +66,12 @@ graph TD
     佐々木-.気になる.->山田
 {% endhighlight %}
 
-{% mermaid %}
+```mermaid
 graph TD
     斉藤==>松本
     井上==嫌い==>木村
     A["クローバーマーク&clubs;"] -->B["顔文字(/・&omega;・)/"]
-{% endmermaid %}
+```
 {% highlight mermaid %}
 graph TD
     斉藤==>松本
@@ -79,7 +79,7 @@ graph TD
     A["クローバーマーク&clubs;"] -->B["顔文字(/・&omega;・)/"]
 {% endhighlight %}
 #### サブグラフ
-{% mermaid %}
+```mermaid
 graph TB
     神-->従人
     神-->部下
@@ -92,7 +92,7 @@ graph TB
     subgraph Aクラス
     神-->信者
     end
-{% endmermaid %}
+```
 {% highlight mermaid %}
 graph TB
     神-->従人
@@ -109,12 +109,12 @@ graph TB
 {% endhighlight}
 
 #### 動き
-{% mermaid %}
+```mermaid
 graph LR
     A-->Google
     click A callback "クリック"
     click Google "https://www.google.co.jp/" "リンク指定"
-{% endmermaid %}
+```
 {% highlight mermaid %}
 graph LR
     A-->Google
@@ -122,12 +122,12 @@ graph LR
     click Google "https://www.google.co.jp/" "リンク指定"
 {% endhighlight}
 #### スタイル指定
-{% mermaid %}
+```mermaid
 graph LR
     start(開始)-->stop(完了)
     style start fill:#f9f,stroke:#333,stroke-width:4px
     style stop fill:#ccf,stroke:#f66,stroke-width:2px,stroke-dasharray: 5, 5
-{% endmermaid %}
+```
 {% highlight mermaid %}
 graph LR
     start(開始)-->stop(完了)
@@ -143,7 +143,7 @@ BT - 下から上
 RL - 右から左
 LR - 左から右
 下記は、上から下への流れを示すフローチャート
-{% mermaid %}
+```mermaid
 graph TB
     A-->B
     A-->C
@@ -157,7 +157,7 @@ graph TB
 
     D-->G
     D-->H
-{% endmermaid %}
+```
 {% highlight mermaid %}
 graph TB
     A-->B
@@ -235,13 +235,13 @@ sequenceDiagram
 image.png
 
 #### ループ表現可能
-{% mermaid %}
+```mermaid
 sequenceDiagram
     クライアント->>+サーバー: 要求
     loop ループ処理
         サーバー-->>-クライアント: 送信
     end
-{% endmermaid %}
+```
 {% highlight mermaid %}
 sequenceDiagram
     クライアント->>+サーバー: 要求
@@ -250,7 +250,7 @@ sequenceDiagram
     end
 {% endhighlight %}
 #### 条件分岐可能
-{% mermaid %}
+```mermaid
 sequenceDiagram
     participant cl as クライアント
     participant sv as サーバー
@@ -260,7 +260,7 @@ sequenceDiagram
     else 異常
         sv->>cl: ダメ
     end
-{% endmermaid %}
+```
 {% highlight mermaid %}
 sequenceDiagram
     participant cl as クライアント
@@ -274,7 +274,7 @@ sequenceDiagram
 {% endhighlight %}
 ### ガントチャート
 最初に「gant」を指定する。
-{% mermaid %}
+```mermaid
 gantt
     dateFormat  YYYY-MM-DD
     title タスク管理
@@ -290,7 +290,7 @@ gantt
     作業中タスク               :active,  des2, 2019-01-11, 5d
     予定タスク               :         des3, after des2, 6d
     予定タスク2              :         des4, after des3, 6d
-{% endmermaid %}
+```
 {% highlight mermaid %}
 gantt
     dateFormat  YYYY-MM-DD
@@ -327,7 +327,7 @@ mermaid.ganttConfig ={
 
 
 ### フローチャート
-{% mermaid %}
+```mermaid
 graph TB
   Macの選び方 --> 持ち歩く
   持ち歩く -->|はい| スペック
@@ -336,7 +336,7 @@ graph TB
   スペック -->|低くても良い| R2[MacBook Air]
   予算 --> |いくらでもある| R3[Mac Pro]
   予算 --> |できれば抑えたい| R4[Mac mini / iMac]
-{% endmermaid %}
+```
 {% highlight mermaid %}
 graph TB
   Macの選び方 --> 持ち歩く
@@ -348,7 +348,7 @@ graph TB
   予算 --> |できれば抑えたい| R4[Mac mini / iMac]
 {% endhighlight %}
 ### クラス図・エンティティ図
-{% mermaid %}
+```mermaid
 classDiagram
   class ジョブ{
     -int HP
@@ -374,7 +374,7 @@ classDiagram
   白魔術師 <|-- 白魔道師
   ジョブ <|-- 黒魔術師
   ジョブ <|-- 白魔術師
-{% endmermaid %}
+```
 {% highlight mermaid %}
 classDiagram
   class ジョブ{
@@ -403,7 +403,7 @@ classDiagram
   ジョブ <|-- 白魔術師
 {% endhighlight %}
 ###状態遷移図
-{% mermaid %}
+```mermaid
 stateDiagram
   [*] --> 待機
   待機 --> [*]
@@ -411,7 +411,7 @@ stateDiagram
   索敵 --> 待機
   索敵 --> 威嚇射撃
   威嚇射撃 --> [*]
-{% endmermaid %}
+```
 {% highlight mermaid %}
 stateDiagram
   [*] --> 待機
@@ -422,7 +422,7 @@ stateDiagram
   威嚇射撃 --> [*]
 {% endhighlight %}
 ### ガントチャート
-{% mermaid %}
+```mermaid
 gantt
   title PHPのライフサイクル
 
@@ -438,7 +438,7 @@ gantt
     アクティブサポート      : 2019-11-28, 2021-11-28
     セキュリティサポート     : crit, 2022-11-28
 
-{% endmermaid %}
+```
 {% highlight mermaid %}
 gantt
   title PHPのライフサイクル
@@ -457,7 +457,7 @@ gantt
 {% endhighlight %}
 
 ### 円グラフ
-{% mermaid %}
+```mermaid
 pie
   "iOS": 45.2
   "iPhone": 17.2
@@ -469,7 +469,7 @@ pie
   "Realm": 3
   "Android": 3
   "Others": 2
-{% endmermaid %}
+```
 {% highlight mermaid %}
 pie
   "iOS": 45.2
