@@ -88,6 +88,7 @@ gems:
   - jekyll-amazon
   - jekyll-twitter-plugin
   - jekyll-codepen
+  - jekyll-plantuml-url
 
 codepen:
   theme: 11473
@@ -124,3 +125,9 @@ fa_prefix: #default: fa
 fa_exclude: #
 mermaid:
   src: 'js/mermaid.js'
+
+plantuml:
+    url:          'http://www.plantuml.com/plantuml'
+    type:         'svg'
+    ssl_noverify: '0'
+    http_debug:   '0'

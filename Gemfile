@@ -22,4 +22,5 @@ group :jekyll_plugins do
   gem "jekyll-amazon"
   gem "jekyll-twitter-plugin"
   gem "jekyll-codepen"
+  gem "jekyll-plantuml-url"
 end
