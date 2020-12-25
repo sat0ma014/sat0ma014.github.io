@@ -1,0 +1,29 @@
+prose:
+  media: "assets"
+  metadata:
+    _posts:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "blog"
+      - name: "published"
+        field:
+          label: "記事を公開"
+          element: "checkbox"
+          value: "true"
+      - name: "summary"
+        field:
+          element: "text"
+          help: "記事概要"
+      - name: "image"
+        field:
+          element: "text"
+          help: "画像URL"
+      - name: "link"
+        field:
+          element: "text"
+          help: "外部URL"
+      - name: "category"
+        field:
+          element: "hidden"
+          value: "blog"
