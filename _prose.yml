@@ -27,3 +27,8 @@ prose:
         field:
           element: "hidden"
           value: "blog"
+      - name: "tags"
+        field:
+          element: "multiselect"
+          label: "Add Tags"
+          placeholder: "Choose Tags"
