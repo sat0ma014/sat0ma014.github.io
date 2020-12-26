@@ -1,6 +1,6 @@
 ---
 category: blog
-layout: blog
+layout: post
 published: true
 ---
 {% toc %}
