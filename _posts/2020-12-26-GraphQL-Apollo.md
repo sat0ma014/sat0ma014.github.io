@@ -1,6 +1,6 @@
 ---
 category: blog
-layout: blog
+layout: null
 published: true
 ---
 ## GraphQL をApolloでアクセスする際に参考になりそうな物
