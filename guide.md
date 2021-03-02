@@ -3,6 +3,7 @@ layout: page
 title: Guide for Jekyll
 permalink: /guide/
 toc: true
+published: true
 ---
 {% toc %}
 ## このサイトはどのようにして出来たか
@@ -13,7 +14,7 @@ toc: true
 {% endhighlight %}
 3. プラグインを動作させるために、
   * Gemfileを作成
-{% gist_it http://github.com/sat0ma014.github.io/blob/master/Gemfile %}
+{% gist_it http://github.com/sat0ma014/sat0ma014.github.io/blob/master/Gemfile %}
 
   * Github Actionを設定
 {% gist_it .github/workflows/github-pages.yml %}
