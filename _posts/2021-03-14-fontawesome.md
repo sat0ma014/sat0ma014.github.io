@@ -3,6 +3,6 @@ category: blog
 layout: post
 published: true
 ---
-## A New Post
+## 日本語検索
 
-Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
+Enter text in [Markdown](https://pikaichi.net/font-awesome.html)
