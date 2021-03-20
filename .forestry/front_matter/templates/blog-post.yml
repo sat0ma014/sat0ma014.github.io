@@ -3,13 +3,14 @@ label: Blog post
 hide_body: false
 fields:
 - type: text
-  name: category
-  label: category
-- type: text
   name: layout
   label: layout
 - type: text
   name: tags
   label: tags
+- name: category
+  type: tag_list
+  default: []
+  label: category
 pages:
 - _posts/自営業/markdown-it/extention.md
