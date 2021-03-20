@@ -2,15 +2,21 @@
 label: Blog post
 hide_body: false
 fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: title
 - type: text
   name: layout
   label: layout
-- type: text
-  name: tags
-  label: tags
 - name: category
   type: tag_list
   default: []
   label: category
+- name: tag
+  type: tag_list
+  default: []
+  label: tag
 pages:
 - _posts/自営業/markdown-it/extention.md
