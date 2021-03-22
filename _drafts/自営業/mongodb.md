@@ -1,5 +1,6 @@
 ---
-category: []
+category:
+- DB
 tag:
 - DB
 - MongoDB
