@@ -20,4 +20,5 @@ fields:
   label: tag
 pages:
 - _posts/自営業/markdown-it/extention.md
+- _posts/自営業/mongodb.md
 - _posts/自営業/行政改革参考.md
