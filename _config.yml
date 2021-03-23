@@ -90,6 +90,10 @@ gems:
   - jekyll-codepen
   - jekyll-plantuml-url
 
+markdown: redcarpet
+redcarpet:
+  extensions: ["autolink"]
+
 codepen:
   theme: 11473
   height: 300
