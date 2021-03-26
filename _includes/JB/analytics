@@ -1,3 +1,8 @@
+/*
+*Copyright (c) plusjade
+*Released under the MIT license
+*https://github.com/plusjade/jekyll-bootstrap
+*/
 {% include JB/is_production %}
 
 {% if is_production and site.JB.analytics.provider and page.JB.analytics != false %}
