@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>mermaid.js – Awesome SAT0MA014 – 運命はそこにある…(Destiny is up to you)</title>
+
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+  
+    
+      repo
+       
+    
+  
+  
+    
+       
+      https://github.com/mermaid-js/mermaid
+    
+    
+      参考
+       
+    
+    
+       
+      https://fairplus.github.io/the-fair-cookbook/1/mermaidsetup.html
+    
+    
+      jekyll-mermaid
+       
+    
+    
+       
+      https://github.com/jasonbellamy/jekyll-mermaid
+    
+    
+      usage
+       
+    
+    
+       
+      https://mermaid-js.github.io/mermaid/#/
+    
+  
+
+" />
+    <meta property="og:description" content="
+  
+    
+      repo
+       
+    
+  
+  
+    
+       
+      https://github.com/mermaid-js/mermaid
+    
+    
+      参考
+       
+    
+    
+       
+      https://fairplus.github.io/the-fair-cookbook/1/mermaidsetup.html
+    
+    
+      jekyll-mermaid
+       
+    
+    
+       
+      https://github.com/jasonbellamy/jekyll-mermaid
+    
+    
+      usage
+       
+    
+    
+       
+      https://mermaid-js.github.io/mermaid/#/
+    
+  
+
+" />
+    
+    <meta name="author" content="Awesome SAT0MA014" />
+
+    
+    <meta property="og:title" content="mermaid.js" />
+    <meta property="twitter:title" content="mermaid.js" />
+    
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Awesome SAT0MA014 - 運命はそこにある…(Destiny is up to you)" href="/feed.xml" />
+    <script src="https://kit.fontawesome.com/b640572b1e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+    <script src="https://unpkg.com/mermaid@8.0.0/dist/mermaid.min.js"></script>
+    <script>
+      const mermaiding = function() {
+        const elements = document.querySelectorAll("pre>code.language-mermaid");
+        for (let i = 0; i < elements.length; i++) {
+          const e = elements[i];
+          const pre = e.parentElement;
+          const replace = function(graph) {
+            const elem = document.createElement('div');
+            elem.innerHTML = graph;
+            elem.className = 'mermaid';
+            elem.setAttribute('data-processed', 'true');
+            pre.parentElement.replaceChild(elem, pre);
+          }
+          mermaid.mermaidAPI.render('id' + i, e.textContent, replace);
+        }
+      }
+if (document.readyState == 'interactive' || document.readyState == 'complete') {
+  mermaiding();
+}else{
+  document.addEventListener("DOMContentLoaded", mermaiding);
+}
+    </script>
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="/" class="site-avatar"><img src="https://pbs.twimg.com/profile_images/1325711828987441152/Fe1SAwgG_400x400.jpg" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">Awesome SAT0MA014</a></h1>
+            <p class="site-description">運命はそこにある…(Destiny is up to you)</p>
+          </div>
+
+          <nav>
+            <span>
+              <a href="/">Blog</a>
+              <a href="/about">About</a>
+              <a href="/guide">Guide</a>
+              <a href="/tag">Tag</a>
+              <a href="/date">Date</a>
+            </span>
+            <br />
+            <span>
+              <a href="/2020">2020</a>
+              <a href="/2020/09">09</a>
+              <a href="/2020/09/01">01</a>
+            </span>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <article class="post">
+  <h1>mermaid.js</h1>
+
+  <div id="table-of-contents">
+    <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h1"><a href="#記法">記法</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#ノード接続点">ノード（接続点）</a></li>
+<li class="toc-entry toc-h3"><a href="#リンク接続">リンク（接続）</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#サブグラフ">サブグラフ</a></li>
+<li class="toc-entry toc-h4"><a href="#動き">動き</a></li>
+<li class="toc-entry toc-h4"><a href="#スタイル指定">スタイル指定</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h3"><a href="#フローチャート">フローチャート</a></li>
+<li class="toc-entry toc-h3"><a href="#シーケンス図">シーケンス図</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#最初にsequencediagramを指定する">最初に「sequenceDiagram」を指定する。</a></li>
+<li class="toc-entry toc-h4"><a href="#ライフライン参加者を定義することもできる">ライフライン（参加者）を定義することもできる。</a></li>
+<li class="toc-entry toc-h4"><a href="#エイリアス変数や名前を指定することもできる">エイリアス（変数や名前）を指定することもできる。</a></li>
+<li class="toc-entry toc-h4"><a href="#ループ表現可能">ループ表現可能</a></li>
+<li class="toc-entry toc-h4"><a href="#条件分岐可能">条件分岐可能</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h3"><a href="#ガントチャート">ガントチャート</a></li>
+<li class="toc-entry toc-h3"><a href="#フローチャート-1">フローチャート</a></li>
+<li class="toc-entry toc-h3"><a href="#クラス図エンティティ図">クラス図・エンティティ図</a></li>
+<li class="toc-entry toc-h3"><a href="#ガントチャート-1">ガントチャート</a></li>
+<li class="toc-entry toc-h3"><a href="#円グラフ">円グラフ</a></li>
+</ul>
+</li>
+</ul>
+  </div>
+
+  <div class="entry">
+    <table>
+  <thead>
+    <tr>
+      <th>repo</th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> </td>
+      <td>https://github.com/mermaid-js/mermaid</td>
+    </tr>
+    <tr>
+      <td>参考</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>https://fairplus.github.io/the-fair-cookbook/1/mermaidsetup.html</td>
+    </tr>
+    <tr>
+      <td>jekyll-mermaid</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>https://github.com/jasonbellamy/jekyll-mermaid</td>
+    </tr>
+    <tr>
+      <td>usage</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>https://mermaid-js.github.io/mermaid/#/</td>
+    </tr>
+  </tbody>
+</table>
+
+<ul id="toc" class="section-nav">
+</ul>
+
+<h1 id="記法">記法</h1>
+
+<h3 id="ノード接続点">ノード（接続点）</h3>
+
+<script src="js/mermaid.js"></script>
+<div class="mermaid">
+graph TD
+    ノード
+    ノード1[テキスト入りノード]
+    ノード2(丸括弧形ノード)
+    ノード3((円形ノード))
+    ノード4&gt;非対称形ノード]
+    ノード5{ひし形ノード}
+</div>
+
+<figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">graph TD
+    ノード
+    ノード1[テキスト入りノード]
+    ノード2(丸括弧形ノード)
+    ノード3((円形ノード))
+    ノード4&gt;非対称形ノード]
+    ノード5{ひし形ノード}</code></pre></figure>
+
+<h3 id="リンク接続">リンク（接続）</h3>
+<p>|矢印付きリンク||
+|オープンリンク||
+|リンク上テキスト||
+|矢印とテキストのリンク||
+|点線リンク||
+|点線リンク上テキスト||
+|太線リンク||
+|太線上のテキスト||
+|特殊文字コード使用||
+|特殊文字詳細は、こちら||
+|特殊文字変換ツールはこちら||</p>
+
+<script src="js/mermaid.js"></script>
+<div class="mermaid">
+graph TD
+    鈴木--&gt;田中
+    佐藤---高橋
+    渡辺---|仲良し|伊藤
+    中村--&gt;|好き|山本
+    小林-.-&gt;加藤
+    佐々木-.気になる.-&gt;山田
+</div>
+
+<figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">graph TD
+    鈴木--&gt;田中
+    佐藤---高橋
+    渡辺---|仲良し|伊藤
+    中村--&gt;|好き|山本
+    小林-.-&gt;加藤
+    佐々木-.気になる.-&gt;山田</code></pre></figure>
+
+<script src="js/mermaid.js"></script>
+<div class="mermaid">
+graph TD
+    斉藤==&gt;松本
+    井上==嫌い==&gt;木村
+    A["クローバーマーク&clubs;"] --&gt;B["顔文字(/・&omega;・)/"]
+</div>
+
+<figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">graph TD
+    斉藤==&gt;松本
+    井上==嫌い==&gt;木村
+    A["クローバーマーク&amp;clubs;"] --&gt;B["顔文字(/・&amp;omega;・)/"]</code></pre></figure>
+
+<h4 id="サブグラフ">サブグラフ</h4>
+<script src="js/mermaid.js"></script>
+<div class="mermaid">
+graph TB
+    神--&gt;従人
+    神--&gt;部下
+    subgraph Cクラス
+    支配者--&gt;従人
+    end
+    subgraph Bクラス
+    リーダー--&gt;部下
+    end
+    subgraph Aクラス
+    神--&gt;信者
+    end
+</div>
+
+<figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">graph TB
+    神--&gt;従人
+    神--&gt;部下
+    subgraph Cクラス
+    支配者--&gt;従人
+    end
+    subgraph Bクラス
+    リーダー--&gt;部下
+    end
+    subgraph Aクラス
+    神--&gt;信者
+    end</code></pre></figure>
+
+<h4 id="動き">動き</h4>
+<script src="js/mermaid.js"></script>
+<div class="mermaid">
+graph LR
+    A--&gt;Google
+    click A callback "クリック"
+    click Google "https://www.google.co.jp/" "リンク指定"
+</div>
+
+<figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">graph LR
+    A--&gt;Google
+    click A callback "クリック"
+    click Google "https://www.google.co.jp/" "リンク指定"</code></pre></figure>
+
+<h4 id="スタイル指定">スタイル指定</h4>
+<script src="js/mermaid.js"></script>
+<div class="mermaid">
+graph LR
+    start(開始)--&gt;stop(完了)
+    style start fill:#f9f,stroke:#333,stroke-width:4px
+    style stop fill:#ccf,stroke:#f66,stroke-width:2px,stroke-dasharray: 5, 5
+</div>
+
+<figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">graph LR
+    start(開始)--&gt;stop(完了)
+    style start fill:#f9f,stroke:#333,stroke-width:4px
+    style stop fill:#ccf,stroke:#f66,stroke-width:2px,stroke-dasharray: 5, 5</code></pre></figure>
+
+<h3 id="フローチャート">フローチャート</h3>
+<p>フローチャートを作成の際には、「graph タイプ」で指定
+指定タイプは、下記。
+TB - 上から下
+BT - 下から上
+RL - 右から左
+LR - 左から右
+下記は、上から下への流れを示すフローチャート
+<script src="js/mermaid.js"></script>&lt;div class="mermaid"&gt;
+graph TB
+    A–&gt;B
+    A–&gt;C
+    A–&gt;D
+    B–&gt;E
+    B–&gt;F
+    C–&gt;F
+    C–&gt;G
+    D–&gt;G
+    D–&gt;H
+&lt;/div&gt;</p>
+
+<figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">graph TB
+    A--&gt;B
+    A--&gt;C
+    A--&gt;D
+    B--&gt;E
+    B--&gt;F
+    C--&gt;F
+    C--&gt;G
+    D--&gt;G
+    D--&gt;H</code></pre></figure>
+
+<p>下記は、左から右への流れを示すフローチャート
+※同じノード（接続点）があれば、自動的に流れを示す。
+graph LR
+    A–&gt;B
+    B–&gt;C
+    C–&gt;D
+    D–&gt;E
+    E–&gt;F
+    F–&gt;G
+    G–&gt;H
+    H–&gt;I
+    I–&gt;A
+image.png</p>
+<h3 id="シーケンス図">シーケンス図</h3>
+<h4 id="最初にsequencediagramを指定する">最初に「sequenceDiagram」を指定する。</h4>
+<p>sequenceDiagram
+    クライアント-»サーバー: 要求
+    サーバー–»クライアント: 送信
+image.png</p>
+<h4 id="ライフライン参加者を定義することもできる">ライフライン（参加者）を定義することもできる。</h4>
+<h4 id="エイリアス変数や名前を指定することもできる">エイリアス（変数や名前）を指定することもできる。</h4>
+<p>sequenceDiagram
+    participant クライアント
+    participant sv as サーバー
+    participant db as データベース
+    # データ取得コード
+    クライアント -» sv : 要求
+    sv -» db : 発行
+    db –» sv : 結果
+    sv –» クライアント : 結果
+    alt 正常終了
+        Note over クライアント : 取得データ表示
+    else エラー
+        Note over クライアント : エラー表示
+    end
+image.png
+実行仕様（イベント）を追加できる。
+sequenceDiagram
+    クライアント-»+サーバー: 要求
+    サーバー–»-クライアント: 送信
+image.png
+ノート（メモ）を追加できる。
+sequenceDiagram
+    クライアント-»+サーバー: 要求
+    Note right of サーバー: これは基本処理です
+    サーバー–»-クライアント: 送信
+image.png
+sequenceDiagram
+    クライアント-»+サーバー: 要求
+    Note over クライアント,サーバー: きちんと返してくれるかな。
+    サーバー–»-クライアント: 送信
+image.png</p>
+<h4 id="ループ表現可能">ループ表現可能</h4>
+<script src="js/mermaid.js"></script>
+<div class="mermaid">
+sequenceDiagram
+    クライアント-&gt;&gt;+サーバー: 要求
+    loop ループ処理
+        サーバー--&gt;&gt;-クライアント: 送信
+    end
+</div>
+
+<figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">sequenceDiagram
+    クライアント-&gt;&gt;+サーバー: 要求
+    loop ループ処理
+        サーバー--&gt;&gt;-クライアント: 送信
+    end</code></pre></figure>
+
+<h4 id="条件分岐可能">条件分岐可能</h4>
+<script src="js/mermaid.js"></script>
+<div class="mermaid">
+sequenceDiagram
+    participant cl as クライアント
+    participant sv as サーバー
+    cl-&gt;&gt;sv: 要求
+    alt 正常
+        sv-&gt;&gt;cl: 送信
+    else 異常
+        sv-&gt;&gt;cl: ダメ
+    end
+</div>
+
+<figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">sequenceDiagram
+    participant cl as クライアント
+    participant sv as サーバー
+    cl-&gt;&gt;sv: 要求
+    alt 正常
+        sv-&gt;&gt;cl: 送信
+    else 異常
+        sv-&gt;&gt;cl: ダメ
+    end</code></pre></figure>
+
+<h3 id="ガントチャート">ガントチャート</h3>
+<p>最初に「gant」を指定する。
+<script src="js/mermaid.js"></script>&lt;div class="mermaid"&gt;
+gantt
+    dateFormat  YYYY-MM-DD
+    title タスク管理
+    section 田中
+    完了タスク            :done,    des1, 2019-01-06,2019-01-08
+    作業中タスク               :active,  des2, 2019-01-09, 3d
+    予定タスク               :         des3, after des2, 5d
+    予定タスク2              :         des4, after des3, 5d
+    section 鈴木
+    完了タスク            :done,    des1, 2019-01-06,2019-01-10
+    作業中タスク               :active,  des2, 2019-01-11, 5d
+    予定タスク               :         des3, after des2, 6d
+    予定タスク2              :         des4, after des3, 6d
+&lt;/div&gt;</p>
+
+<figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">gantt
+    dateFormat  YYYY-MM-DD
+    title タスク管理
+    section 田中
+    完了タスク            :done,    des1, 2019-01-06,2019-01-08
+    作業中タスク               :active,  des2, 2019-01-09, 3d
+    予定タスク               :         des3, after des2, 5d
+    予定タスク2              :         des4, after des3, 5d
+    section 鈴木
+    完了タスク            :done,    des1, 2019-01-06,2019-01-10
+    作業中タスク               :active,  des2, 2019-01-11, 5d
+    予定タスク               :         des3, after des2, 6d
+    予定タスク2              :         des4, after des3, 6d</code></pre></figure>
+
+<h3 id="フローチャート-1">フローチャート</h3>
+<script src="js/mermaid.js"></script>
+<div class="mermaid">
+graph TB
+  Macの選び方 --&gt; 持ち歩く
+  持ち歩く --&gt;|はい| スペック
+  持ち歩く --&gt;|いいえ| 予算
+  スペック --&gt;|必要| R1[MacBook Pro]
+  スペック --&gt;|低くても良い| R2[MacBook Air]
+  予算 --&gt; |いくらでもある| R3[Mac Pro]
+  予算 --&gt; |できれば抑えたい| R4[Mac mini / iMac]
+</div>
+
+<figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">graph TB
+  Macの選び方 --&gt; 持ち歩く
+  持ち歩く --&gt;|はい| スペック
+  持ち歩く --&gt;|いいえ| 予算
+  スペック --&gt;|必要| R1[MacBook Pro]
+  スペック --&gt;|低くても良い| R2[MacBook Air]
+  予算 --&gt; |いくらでもある| R3[Mac Pro]
+  予算 --&gt; |できれば抑えたい| R4[Mac mini / iMac]</code></pre></figure>
+
+<h3 id="クラス図エンティティ図">クラス図・エンティティ図</h3>
+<script src="js/mermaid.js"></script>
+<div class="mermaid">
+classDiagram
+  class ジョブ{
+    -int HP
+    -int MP
+    -たたかう()
+    -どうぐ(item)
+  }
+  class 黒魔術師{
+    -ファイア()
+  }
+  class 黒魔道師{
+    -ファイガ()
+    -メテオ()
+  }
+  class 白魔術師{
+    -ケアル()
+  }
+  class 白魔道師{
+    -ケアルガ()
+    -レイズ()
+  }
+  黒魔術師 &lt;|-- 黒魔道師
+  白魔術師 &lt;|-- 白魔道師
+  ジョブ &lt;|-- 黒魔術師
+  ジョブ &lt;|-- 白魔術師
+</div>
+
+<figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">classDiagram
+  class ジョブ{
+    -int HP
+    -int MP
+    -たたかう()
+    -どうぐ(item)
+  }
+  class 黒魔術師{
+    -ファイア()
+  }
+  class 黒魔道師{
+    -ファイガ()
+    -メテオ()
+  }
+  class 白魔術師{
+    -ケアル()
+  }
+  class 白魔道師{
+    -ケアルガ()
+    -レイズ()
+  }
+  黒魔術師 &lt;|-- 黒魔道師
+  白魔術師 &lt;|-- 白魔道師
+  ジョブ &lt;|-- 黒魔術師
+  ジョブ &lt;|-- 白魔術師</code></pre></figure>
+
+<p>###状態遷移図
+<script src="js/mermaid.js"></script>&lt;div class="mermaid"&gt;
+stateDiagram
+  [<em>] –&gt; 待機
+  待機 –&gt; [</em>]
+  待機 –&gt; 索敵
+  索敵 –&gt; 待機
+  索敵 –&gt; 威嚇射撃
+  威嚇射撃 –&gt; [*]
+&lt;/div&gt;</p>
+
+<figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">stateDiagram
+  [*] --&gt; 待機
+  待機 --&gt; [*]
+  待機 --&gt; 索敵
+  索敵 --&gt; 待機
+  索敵 --&gt; 威嚇射撃
+  威嚇射撃 --&gt; [*]</code></pre></figure>
+
+<h3 id="ガントチャート-1">ガントチャート</h3>
+<script src="js/mermaid.js"></script>
+<div class="mermaid">
+gantt
+  title PHPのライフサイクル
+  section PHP 7.2
+    アクティブサポート      : done, 2017-11-30, 2019-11-30
+    セキュリティサポート     : crit, 2020-11-30
+  section PHP7.3
+    アクティブサポート      : 2018-12-06, 2020-12-06
+    セキュリティサポート     : crit, 2021-12-06
+  section PHP7.4
+    アクティブサポート      : 2019-11-28, 2021-11-28
+    セキュリティサポート     : crit, 2022-11-28
+</div>
+
+<figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">gantt
+  title PHPのライフサイクル
+  section PHP 7.2
+    アクティブサポート      : done, 2017-11-30, 2019-11-30
+    セキュリティサポート     : crit, 2020-11-30
+  section PHP7.3
+    アクティブサポート      : 2018-12-06, 2020-12-06
+    セキュリティサポート     : crit, 2021-12-06
+  section PHP7.4
+    アクティブサポート      : 2019-11-28, 2021-11-28
+    セキュリティサポート     : crit, 2022-11-28</code></pre></figure>
+
+<h3 id="円グラフ">円グラフ</h3>
+<script src="js/mermaid.js"></script>
+<div class="mermaid">
+pie
+  "iOS": 45.2
+  "iPhone": 17.2
+  "PHP": 8.6
+  "Objective-C": 6.5
+  "Swift": 6.5
+  "Xcode": 4
+  "Laravel": 3
+  "Realm": 3
+  "Android": 3
+  "Others": 2
+</div>
+
+<figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">pie
+  "iOS": 45.2
+  "iPhone": 17.2
+  "PHP": 8.6
+  "Objective-C": 6.5
+  "Swift": 6.5
+  "Xcode": 4
+  "Laravel": 3
+  "Realm": 3
+  "Android": 3
+  "Others": 2</code></pre></figure>
+
+
+  </div>
+
+  <div class="date">
+    Written on 2020/09/01
+  </div>
+
+  
+</article>
+
+    </div>
+    <div class="sns-share">
+  <ul class="sns-share__list">
+    <li class="sns-share__item">
+      <a
+        class="sns-share__btn sns-share__btn--fb"
+        href="https://www.facebook.com/sharer/sharer.php?u=https://sat0ma014.github.io/2020/09/01/mermaid2.html"
+        target="_blank"
+        ><i class="fa fa-facebook fa-big"></i
+      ></a>
+    </li>
+    <li class="sns-share__item">
+      <a
+        class="sns-share__btn sns-share__btn--tw"
+        href='https://twitter.com/intent/tweet?url=https://sat0ma014.github.io/2020/09/01/mermaid2.html&text=mermaid.js'
+        target="_blank"
+        ><i class="fa fa-twitter fa-big"></i
+      ></a>
+    </li>
+    <li class="sns-share__item">
+      <a
+        class="sns-share__btn sns-share__btn--line"
+        href='http://line.me/R/msg/text/?mermaid.js\nhttps://sat0ma014.github.io/2020/09/01/mermaid2.html'
+        target="_blank"
+        >LINE</a
+      >
+    </li>
+    <li class="sns-share__item">
+      <a
+        class="sns-share__btn sns-share__btn--hb"
+        href="http://b.hatena.ne.jp/add?mode=confirm&url=https://sat0ma014.github.io/2020/09/01/mermaid2.html&title=mermaid.js"
+        target="_blank"
+        >B!</a
+      >
+    </li>
+    <li class="sns-share__item">
+      <a
+        class="sns-share__btn sns-share__btn--po"
+        href="http://getpocket.com/edit?url=https://sat0ma014.github.io/2020/09/01/mermaid2.html&title=mermaid.js"
+        target="_blank"
+        ><i class="fa fa-get-pocket fa-big"></i
+      ></a>
+    </li>
+    <li class="sns-share__item">
+      <a
+        class="sns-share__btn sns-share__btn--copy js-url-copy"
+        data-clipboard-text='mermaid.js\nhttps://sat0ma014.github.io/2020/09/01/mermaid2.html'
+        ><i class="fa fa-clipboard"></i> copy</a
+      >
+    </li>
+  </ul>
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    new ClipboardJS('.js-url-copy')
+  })
+</script>
+
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          
+<a href="mailto:satomakoto@protonmail.com"><i class="svg-icon email"></i></a>
+
+
+<a href="https://github.com/sat0ma014"><i class="svg-icon github"></i></a>
+<a href="https://instagram.com/sat0ma014"><i class="svg-icon instagram"></i></a>
+<a href="https://www.linkedin.com/in/まこと-さとう-13aa541b6"><i class="svg-icon linkedin"></i></a>
+<a href="https://www.pinterest.com/sat0ma014"><i class="svg-icon pinterest"></i></a>
+<a href="/feed.xml"><i class="svg-icon rss"></i></a>
+<a href="https://www.twitter.com/satomakoto14"><i class="svg-icon twitter"></i></a>
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+  </body>
+</html>

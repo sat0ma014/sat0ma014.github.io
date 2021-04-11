@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>vim_ARC – Awesome SAT0MA014 – 運命はそこにある…(Destiny is up to you)</title>
+
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="構築と設定のみ残しておきます
+設定
+　 vimのカラースキームの設定・編集方法（初心者〜上級者） - Qiita
+" />
+    <meta property="og:description" content="構築と設定のみ残しておきます
+設定
+　 vimのカラースキームの設定・編集方法（初心者〜上級者） - Qiita
+" />
+    
+    <meta name="author" content="Awesome SAT0MA014" />
+
+    
+    <meta property="og:title" content="vim_ARC" />
+    <meta property="twitter:title" content="vim_ARC" />
+    
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Awesome SAT0MA014 - 運命はそこにある…(Destiny is up to you)" href="/feed.xml" />
+    <script src="https://kit.fontawesome.com/b640572b1e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+    <script src="https://unpkg.com/mermaid@8.0.0/dist/mermaid.min.js"></script>
+    <script>
+      const mermaiding = function() {
+        const elements = document.querySelectorAll("pre>code.language-mermaid");
+        for (let i = 0; i < elements.length; i++) {
+          const e = elements[i];
+          const pre = e.parentElement;
+          const replace = function(graph) {
+            const elem = document.createElement('div');
+            elem.innerHTML = graph;
+            elem.className = 'mermaid';
+            elem.setAttribute('data-processed', 'true');
+            pre.parentElement.replaceChild(elem, pre);
+          }
+          mermaid.mermaidAPI.render('id' + i, e.textContent, replace);
+        }
+      }
+if (document.readyState == 'interactive' || document.readyState == 'complete') {
+  mermaiding();
+}else{
+  document.addEventListener("DOMContentLoaded", mermaiding);
+}
+    </script>
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="/" class="site-avatar"><img src="https://pbs.twimg.com/profile_images/1325711828987441152/Fe1SAwgG_400x400.jpg" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">Awesome SAT0MA014</a></h1>
+            <p class="site-description">運命はそこにある…(Destiny is up to you)</p>
+          </div>
+
+          <nav>
+            <span>
+              <a href="/">Blog</a>
+              <a href="/about">About</a>
+              <a href="/guide">Guide</a>
+              <a href="/tag">Tag</a>
+              <a href="/date">Date</a>
+            </span>
+            <br />
+            <span>
+              <a href="/2020">2020</a>
+              <a href="/2020/07">07</a>
+              <a href="/2020/07/01">01</a>
+            </span>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <article class="post">
+  <h1>vim_ARC</h1>
+
+  <div id="table-of-contents">
+    
+  </div>
+
+  <div class="entry">
+    <p>構築と設定のみ残しておきます</p>
+<h2 id="設定">設定</h2>
+<p>　 <a href="https://qiita.com/sff1019/items/3f73856b78d7fa2731c7#1-%E8%87%AA%E5%88%86%E3%81%AEpc%E4%B8%8A%E3%81%AB%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89%E3%81%97%E3%81%A6%E4%BD%BF%E7%94%A8">vimのカラースキームの設定・編集方法（初心者〜上級者） - Qiita</a></p>
+
+<p>　<a href="https://qiita.com/lesguillemets/items/f4cdf359a89585ad1324">Vim の割と新しいおすすめ colorscheme たちを紹介する - Qiita</a></p>
+
+<p>　<a href="http://vimblog.hatenablog.com/entry/vimrc_set_bell_options">Vim のカスタマイズ 〜 ビープの設定 〜 - Vim のブログ</a></p>
+
+<h2 id="プラグイン">プラグイン</h2>
+<p><a href="scrapbox.io/sat0ma014/vim_plugin">vim_plugin</a>
+  <a href="scrapbox.io/sat0ma014/dein">dein</a>
+  <a href="https://qiita.com/delphinus/items/00ff2c0ba972c6e41542"> NeoBundle から dein.vim に乗り換えたら爆速だった話</a></p>
+
+<blockquote>
+  <p>vimのパッケージ管理</p>
+</blockquote>
+
+<p><a href="https://lambdalisue.hatenablog.com/entry/2013/06/23/071344"> Vimを最強のPython開発環境にする2 - Λlisue’s blog - https://lambdalisue.hatenablog.com/</a></p>
+
+<p><a href="https://vim.blue/vim-right-click-menu-how-to-register/"> GVim/neovimの右クリックメニュー登録方法 [Windows 10] | Vim入門 - https://vim.blue/</a></p>
+
+<p><a href="https://qiita.com/s4kr4/items/b55896460e58a1737c76"> Vim/GVim =&gt; Neovim/Neovim-qt 移行時にやったこと - Qiita - https://qiita.com/</a></p>
+
+<figure class="highlight"><pre><code class="language-vim" data-lang="vim"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="p">~</span><span class="sr">/.config/</span>nvic/init<span class="p">.</span><span class="k">vim</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-vim" data-lang="vim"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="code"><pre> <span class="k">if</span> <span class="nb">has</span><span class="p">(</span><span class="s1">'nvim'</span><span class="p">)</span>
+     <span class="k">set</span> <span class="nb">clipboard</span><span class="p">=</span>unnamedplus
+ <span class="k">else</span>
+     <span class="k">set</span> <span class="nb">clipboard</span><span class="p">=</span>unnamed<span class="p">,</span>autoselect
+ <span class="k">endif</span>
+ 
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<p><a href="https://qrunch.net/@okayu/entries/mIRVHKCKSTRfcleX">Neovimでイケイケなエディター環境を! | Qrunch（クランチ） - https://qrunch.net/</a></p>
+
+<p><code class="language-plaintext highlighter-rouge">set inccommand=split</code></p>
+
+<p>===
+<img src="scrapbox.io/sat0ma014.icon" alt="sat0ma014.icon" />[{! ここから未完成]
+<a href="https://qiita.com/Ress/items/7e71e007cf8d41a07a1a">NeoVim と dein.vim を使ってみる! - Qiita - https://qiita.com/</a></p>
+
+<p><a href="https://qiita.com/ysm001/items/8ae97cfdaae3f5fe79f4">IDEっぽいvim環境を構築する.vimrcを書いた - Qiita - https://qiita.com/</a></p>
+
+<p><a href="https://qiita.com/ryuta69/items/98901f4c4f0683e7aa57">vimって極めればvscode並のIDEになるんじゃないの？ - Qiita - https://qiita.com/</a></p>
+
+<p><a href="https://bi.biopapyrus.jp/os/linux/vim.html"> vim | 括弧の自動補完や文字コードの自動判別などに関する設定 - https://bi.biopapyrus.jp/</a></p>
+
+<p><a href="https://wonderwall.hatenablog.com/entry/2019/07/28/230000">Vimメモ : Neovimで開発環境を段階的に構築する（1）インストールとcheckhealth - もた日記</a></p>
+
+<p><a href="https://dev.classmethod.jp/articles/vim-use-shellcommands/">Vimで変態テキスト処理！シェルコマンドを使い倒す | Developers.IO - https://dev.classmethod.jp/</a></p>
+
+<p><a href="https://qiita.com/kooooooooooooooooohe/items/fb106e0a0f0969b4ee38">Vim を使い DarkPowerを得る - Qiita - https://qiita.com/</a></p>
+
+  </div>
+
+  <div class="date">
+    Written on 2020/07/01
+  </div>
+
+  
+</article>
+
+    </div>
+    <div class="sns-share">
+  <ul class="sns-share__list">
+    <li class="sns-share__item">
+      <a
+        class="sns-share__btn sns-share__btn--fb"
+        href="https://www.facebook.com/sharer/sharer.php?u=https://sat0ma014.github.io/2020/07/01/vim_ARC.html"
+        target="_blank"
+        ><i class="fa fa-facebook fa-big"></i
+      ></a>
+    </li>
+    <li class="sns-share__item">
+      <a
+        class="sns-share__btn sns-share__btn--tw"
+        href='https://twitter.com/intent/tweet?url=https://sat0ma014.github.io/2020/07/01/vim_ARC.html&text=vim_ARC'
+        target="_blank"
+        ><i class="fa fa-twitter fa-big"></i
+      ></a>
+    </li>
+    <li class="sns-share__item">
+      <a
+        class="sns-share__btn sns-share__btn--line"
+        href='http://line.me/R/msg/text/?vim_ARC\nhttps://sat0ma014.github.io/2020/07/01/vim_ARC.html'
+        target="_blank"
+        >LINE</a
+      >
+    </li>
+    <li class="sns-share__item">
+      <a
+        class="sns-share__btn sns-share__btn--hb"
+        href="http://b.hatena.ne.jp/add?mode=confirm&url=https://sat0ma014.github.io/2020/07/01/vim_ARC.html&title=vim_ARC"
+        target="_blank"
+        >B!</a
+      >
+    </li>
+    <li class="sns-share__item">
+      <a
+        class="sns-share__btn sns-share__btn--po"
+        href="http://getpocket.com/edit?url=https://sat0ma014.github.io/2020/07/01/vim_ARC.html&title=vim_ARC"
+        target="_blank"
+        ><i class="fa fa-get-pocket fa-big"></i
+      ></a>
+    </li>
+    <li class="sns-share__item">
+      <a
+        class="sns-share__btn sns-share__btn--copy js-url-copy"
+        data-clipboard-text='vim_ARC\nhttps://sat0ma014.github.io/2020/07/01/vim_ARC.html'
+        ><i class="fa fa-clipboard"></i> copy</a
+      >
+    </li>
+  </ul>
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    new ClipboardJS('.js-url-copy')
+  })
+</script>
+
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          
+<a href="mailto:satomakoto@protonmail.com"><i class="svg-icon email"></i></a>
+
+
+<a href="https://github.com/sat0ma014"><i class="svg-icon github"></i></a>
+<a href="https://instagram.com/sat0ma014"><i class="svg-icon instagram"></i></a>
+<a href="https://www.linkedin.com/in/まこと-さとう-13aa541b6"><i class="svg-icon linkedin"></i></a>
+<a href="https://www.pinterest.com/sat0ma014"><i class="svg-icon pinterest"></i></a>
+<a href="/feed.xml"><i class="svg-icon rss"></i></a>
+<a href="https://www.twitter.com/satomakoto14"><i class="svg-icon twitter"></i></a>
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+  </body>
+</html>

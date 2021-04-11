@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nuxt Async – Awesome SAT0MA014 – 運命はそこにある…(Destiny is up to you)</title>
+
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+Nuxt.jsのAsyncよくわからない
+データの取得 - NuxtJS
+を読んだけど
+
+  asyncData は pages でのみ使用可能で、このフック内では this にアクセスすることはできません。
+
+" />
+    <meta property="og:description" content="
+Nuxt.jsのAsyncよくわからない
+データの取得 - NuxtJS
+を読んだけど
+
+  asyncData は pages でのみ使用可能で、このフック内では this にアクセスすることはできません。
+
+" />
+    
+    <meta name="author" content="Awesome SAT0MA014" />
+
+    
+    <meta property="og:title" content="Nuxt Async" />
+    <meta property="twitter:title" content="Nuxt Async" />
+    
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Awesome SAT0MA014 - 運命はそこにある…(Destiny is up to you)" href="/feed.xml" />
+    <script src="https://kit.fontawesome.com/b640572b1e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+    <script src="https://unpkg.com/mermaid@8.0.0/dist/mermaid.min.js"></script>
+    <script>
+      const mermaiding = function() {
+        const elements = document.querySelectorAll("pre>code.language-mermaid");
+        for (let i = 0; i < elements.length; i++) {
+          const e = elements[i];
+          const pre = e.parentElement;
+          const replace = function(graph) {
+            const elem = document.createElement('div');
+            elem.innerHTML = graph;
+            elem.className = 'mermaid';
+            elem.setAttribute('data-processed', 'true');
+            pre.parentElement.replaceChild(elem, pre);
+          }
+          mermaid.mermaidAPI.render('id' + i, e.textContent, replace);
+        }
+      }
+if (document.readyState == 'interactive' || document.readyState == 'complete') {
+  mermaiding();
+}else{
+  document.addEventListener("DOMContentLoaded", mermaiding);
+}
+    </script>
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="/" class="site-avatar"><img src="https://pbs.twimg.com/profile_images/1325711828987441152/Fe1SAwgG_400x400.jpg" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">Awesome SAT0MA014</a></h1>
+            <p class="site-description">運命はそこにある…(Destiny is up to you)</p>
+          </div>
+
+          <nav>
+            <span>
+              <a href="/">Blog</a>
+              <a href="/about">About</a>
+              <a href="/guide">Guide</a>
+              <a href="/tag">Tag</a>
+              <a href="/date">Date</a>
+            </span>
+            <br />
+            <span>
+              <a href="/2020">2020</a>
+              <a href="/2020/12">12</a>
+              <a href="/2020/12/26">26</a>
+            </span>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <article class="post">
+  <h1>Nuxt Async</h1>
+
+  <div id="table-of-contents">
+    
+  </div>
+
+  <div class="entry">
+    
+<h2 id="nuxtjsのasyncよくわからない">Nuxt.jsのAsyncよくわからない</h2>
+<p><a href="https://ja.nuxtjs.org/docs/2.x/features/data-fetching/">データの取得 - NuxtJS</a>
+を読んだけど</p>
+<blockquote>
+  <p>asyncData は pages でのみ使用可能で、このフック内では this にアクセスすることはできません。</p>
+</blockquote>
+
+<p>がよくわからない</p>
+<blockquote>
+  <p>どうやらasyncDataメソッドはページコンポーネントで使えるもので、通常のコンポーネントでは使用できないようです。<br />
+–<a href="https://qiita.com/hiroyukiwk/items/b83f52e6d899b06506cb">【Nuxt.js】非同期データーをコンポーネント内で扱う方法</a></p>
+</blockquote>
+
+<p>同様にこれもわからん</p>
+
+<h2 id="参考になりそうなこれから読む物">参考になりそうなこれから読む物</h2>
+<p><a href="https://codezine.jp/article/detail/12398">ページ表示前にデータを取得して反映できる「Nuxt.js」の非同期データ機能を使いこなそう</a>
+<a href="https://ja.nuxtjs.org/faq/async-data-components/">コンポーネント内で非同期データを扱うには？</a></p>
+
+  </div>
+
+  <div class="date">
+    Written on 2020/12/26
+  </div>
+
+  
+</article>
+
+    </div>
+    <div class="sns-share">
+  <ul class="sns-share__list">
+    <li class="sns-share__item">
+      <a
+        class="sns-share__btn sns-share__btn--fb"
+        href="https://www.facebook.com/sharer/sharer.php?u=https://sat0ma014.github.io/blog/2020/12/26/nuxt-async.html"
+        target="_blank"
+        ><i class="fa fa-facebook fa-big"></i
+      ></a>
+    </li>
+    <li class="sns-share__item">
+      <a
+        class="sns-share__btn sns-share__btn--tw"
+        href='https://twitter.com/intent/tweet?url=https://sat0ma014.github.io/blog/2020/12/26/nuxt-async.html&text=Nuxt Async'
+        target="_blank"
+        ><i class="fa fa-twitter fa-big"></i
+      ></a>
+    </li>
+    <li class="sns-share__item">
+      <a
+        class="sns-share__btn sns-share__btn--line"
+        href='http://line.me/R/msg/text/?Nuxt Async\nhttps://sat0ma014.github.io/blog/2020/12/26/nuxt-async.html'
+        target="_blank"
+        >LINE</a
+      >
+    </li>
+    <li class="sns-share__item">
+      <a
+        class="sns-share__btn sns-share__btn--hb"
+        href="http://b.hatena.ne.jp/add?mode=confirm&url=https://sat0ma014.github.io/blog/2020/12/26/nuxt-async.html&title=Nuxt Async"
+        target="_blank"
+        >B!</a
+      >
+    </li>
+    <li class="sns-share__item">
+      <a
+        class="sns-share__btn sns-share__btn--po"
+        href="http://getpocket.com/edit?url=https://sat0ma014.github.io/blog/2020/12/26/nuxt-async.html&title=Nuxt Async"
+        target="_blank"
+        ><i class="fa fa-get-pocket fa-big"></i
+      ></a>
+    </li>
+    <li class="sns-share__item">
+      <a
+        class="sns-share__btn sns-share__btn--copy js-url-copy"
+        data-clipboard-text='Nuxt Async\nhttps://sat0ma014.github.io/blog/2020/12/26/nuxt-async.html'
+        ><i class="fa fa-clipboard"></i> copy</a
+      >
+    </li>
+  </ul>
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    new ClipboardJS('.js-url-copy')
+  })
+</script>
+
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          
+<a href="mailto:satomakoto@protonmail.com"><i class="svg-icon email"></i></a>
+
+
+<a href="https://github.com/sat0ma014"><i class="svg-icon github"></i></a>
+<a href="https://instagram.com/sat0ma014"><i class="svg-icon instagram"></i></a>
+<a href="https://www.linkedin.com/in/まこと-さとう-13aa541b6"><i class="svg-icon linkedin"></i></a>
+<a href="https://www.pinterest.com/sat0ma014"><i class="svg-icon pinterest"></i></a>
+<a href="/feed.xml"><i class="svg-icon rss"></i></a>
+<a href="https://www.twitter.com/satomakoto14"><i class="svg-icon twitter"></i></a>
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+  </body>
+</html>

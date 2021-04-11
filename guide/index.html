@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Guide for Jekyll – Awesome SAT0MA014 – 運命はそこにある…(Destiny is up to you)</title>
+
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="運命はそこにある…(Destiny is up to you)">
+    <meta property="og:description" content="運命はそこにある…(Destiny is up to you)" />
+    
+    <meta name="author" content="Awesome SAT0MA014" />
+
+    
+    <meta property="og:title" content="Guide for Jekyll" />
+    <meta property="twitter:title" content="Guide for Jekyll" />
+    
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Awesome SAT0MA014 - 運命はそこにある…(Destiny is up to you)" href="/feed.xml" />
+    <script src="https://kit.fontawesome.com/b640572b1e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+    <script src="https://unpkg.com/mermaid@8.0.0/dist/mermaid.min.js"></script>
+    <script>
+      const mermaiding = function() {
+        const elements = document.querySelectorAll("pre>code.language-mermaid");
+        for (let i = 0; i < elements.length; i++) {
+          const e = elements[i];
+          const pre = e.parentElement;
+          const replace = function(graph) {
+            const elem = document.createElement('div');
+            elem.innerHTML = graph;
+            elem.className = 'mermaid';
+            elem.setAttribute('data-processed', 'true');
+            pre.parentElement.replaceChild(elem, pre);
+          }
+          mermaid.mermaidAPI.render('id' + i, e.textContent, replace);
+        }
+      }
+if (document.readyState == 'interactive' || document.readyState == 'complete') {
+  mermaiding();
+}else{
+  document.addEventListener("DOMContentLoaded", mermaiding);
+}
+    </script>
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="/" class="site-avatar"><img src="https://pbs.twimg.com/profile_images/1325711828987441152/Fe1SAwgG_400x400.jpg" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">Awesome SAT0MA014</a></h1>
+            <p class="site-description">運命はそこにある…(Destiny is up to you)</p>
+          </div>
+
+          <nav>
+            <span>
+              <a href="/">Blog</a>
+              <a href="/about">About</a>
+              <a href="/guide">Guide</a>
+              <a href="/tag">Tag</a>
+              <a href="/date">Date</a>
+            </span>
+            <br />
+            <span>
+              <a href="/"></a>
+              <a href="/"></a>
+              <a href="/"></a>
+            </span>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <article class="page">
+
+  <h1>Guide for Jekyll</h1>
+  <div id="table-of-contents">
+    <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h2"><a href="#このサイトはどのようにして出来たか">このサイトはどのようにして出来たか</a></li>
+<li class="toc-entry toc-h2"><a href="#各パーツの解説">各パーツの解説</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#archive-page">archive page</a></li>
+<li class="toc-entry toc-h3"><a href="#sample-post">sample-post</a></li>
+<li class="toc-entry toc-h3"><a href="#gist">gist</a></li>
+<li class="toc-entry toc-h3"><a href="#gist-it">gist-it</a></li>
+<li class="toc-entry toc-h3"><a href="#blog-card">Blog card</a></li>
+<li class="toc-entry toc-h3"><a href="#toc">TOC</a></li>
+<li class="toc-entry toc-h3"><a href="#sns-button">sns button</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#url">url</a></li>
+<li class="toc-entry toc-h4"><a href="#design">design</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h3"><a href="#font-awesome">font-awesome</a></li>
+</ul>
+</li>
+</ul>
+  </div>
+  <div class="entry">
+    <ul id="toc" class="section-nav">
+</ul>
+<h2 id="このサイトはどのようにして出来たか">このサイトはどのようにして出来たか</h2>
+
+<ol>
+  <li>Jekyll-now からコピー</li>
+  <li>
+    <p>パーマリンク設定を変更</p>
+  </li>
+  <li>プラグインを動作させるために、
+    <ul>
+      <li>Gemfileを作成
+<script src="http://gist-it.appspot.com/github///raw//"></script></li>
+    </ul>
+  </li>
+</ol>
+
+<ul>
+  <li>Github Actionを設定
+<script src="http://gist-it.appspot.com/github///raw//"></script>
+    <ol>
+      <li>_includes/JB をjekyll-bootstrapから流用</li>
+    </ol>
+  </li>
+</ul>
+
+<h2 id="各パーツの解説">各パーツの解説</h2>
+
+<h3 id="archive-page">archive page</h3>
+
+<div class="bc-1">
+  <div class="bc-2">
+    <a href="https://mebiusbox.github.io/note/2016/06/18/jekyll-create-archives.html" class="bc-3">
+	  <img src="http://capture.heartrails.com/100x100/?https://mebiusbox.github.io/note/2016/06/18/jekyll-create-archives.html" class="bc-4" />
+	</a>
+  </div>
+  <p style="margin:0;">
+    <a href="https://mebiusbox.github.io/note/2016/06/18/jekyll-create-archives.html" class="bc-5">Mebiusbox software - Jekyll：アーカイブページを作る</a>
+  </p>
+  <p class="bc-6"></p>
+  <div class="bc-7">
+    <p class="bc-8">
+      <img src="http://favicon.hatena.ne.jp/?url=https://mebiusbox.github.io/note/2016/06/18/jekyll-create-archives.html" class="bc-favicon" />mebiusbox.github.io<img src="http://b.hatena.ne.jp/entry/image/https://mebiusbox.github.io/note/2016/06/18/jekyll-create-archives.html" class="bc-hatebu" />
+    </p>
+  </div>
+</div>
+
+<h3 id="sample-post">sample-post</h3>
+
+<script src="http://gist-it.appspot.com/github/sat0ma014/sat0ma014.github.io/raw/master/templete.md"></script>
+
+<h3 id="gist">gist</h3>
+
+<figure class="highlight"><pre><code class="language-text" data-lang="text">{% gist id %}</code></pre></figure>
+
+<h3 id="gist-it">gist-it</h3>
+
+<figure class="highlight"><pre><code class="language-text" data-lang="text">{% gist_it URL %}</code></pre></figure>
+
+<h3 id="blog-card">Blog card</h3>
+
+<div class="bc-1">
+  <div class="bc-2">
+    <a href="http://giantech.jp/2015/06/10/use-blogcard-on-jekyll/" class="bc-3">
+	  <img src="http://giantech.jp/assets/images/20150610/blogcard_hatena.png" class="bc-4" />
+	</a>
+  </div>
+  <p style="margin:0;">
+    <a href="http://giantech.jp/2015/06/10/use-blogcard-on-jekyll/" class="bc-5">自分のサイト上で外部リンクをFacebookの画像つきリンクっぽく表示する方法</a>
+  </p>
+  <p class="bc-6">サイトをOGP対応にしたので、SNSから格好良くリンクされるようになった。しかし自分の記事から外部のリンクを同じように素敵に表示する方法はないのか調べてみた。</p>
+  <div class="bc-7">
+    <p class="bc-8">
+      <img src="http://favicon.hatena.ne.jp/?url=http://giantech.jp/2015/06/10/use-blogcard-on-jekyll/" class="bc-favicon" />giantech.jp<img src="http://b.hatena.ne.jp/entry/image/http://giantech.jp/2015/06/10/use-blogcard-on-jekyll/" class="bc-hatebu" />
+    </p>
+  </div>
+</div>
+
+<h3 id="toc">TOC</h3>
+
+<figure class="highlight"><pre><code class="language-text" data-lang="text">{% toc %}</code></pre></figure>
+
+<h3 id="sns-button">sns button</h3>
+
+<h4 id="url">url</h4>
+
+<div class="bc-1">
+  <div class="bc-2">
+    <a href="https://murashun.jp/blog/20150628-01.html" class="bc-3">
+	  <img src="https://d25p42k9ljek3s.cloudfront.net/img/twctop.png" class="bc-4" />
+	</a>
+  </div>
+  <p style="margin:0;">
+    <a href="https://murashun.jp/blog/20150628-01.html" class="bc-5">SNS ボタンの設置とカスタマイズ方法</a>
+  </p>
+  <p class="bc-6">Twitter、Facebook などの色々なソーシャルボタンをWebページに設置してみましょう。また、オフィシャルのソーシャルボタンはそれぞれデザインが異なるため、オリジナルのボタンにカスタマイズする方法も紹介します。</p>
+  <div class="bc-7">
+    <p class="bc-8">
+      <img src="http://favicon.hatena.ne.jp/?url=https://murashun.jp/blog/20150628-01.html" class="bc-favicon" />murashun.jp<img src="http://b.hatena.ne.jp/entry/image/https://murashun.jp/blog/20150628-01.html" class="bc-hatebu" />
+    </p>
+  </div>
+</div>
+
+<div class="bc-1">
+  <div class="bc-2">
+    <a href="https://webdesign-trends.net/entry/3632" class="bc-3">
+	  <img src="https://webdesign-trends.net/wp/wp-content/uploads/2017/10/snsurls.png" class="bc-4" />
+	</a>
+  </div>
+  <p style="margin:0;">
+    <a href="https://webdesign-trends.net/entry/3632" class="bc-5">オリジナルのシェアボタンを作ろう！各種SNSのボタン設置用URLまとめ</a>
+  </p>
+  <p class="bc-6">Facebook、TwitterなどのSNSに記事をシェアしてもらうのに必要なのが「シェアボタン」です。サービ…</p>
+  <div class="bc-7">
+    <p class="bc-8">
+      <img src="http://favicon.hatena.ne.jp/?url=https://webdesign-trends.net/entry/3632" class="bc-favicon" />webdesign-trends.net<img src="http://b.hatena.ne.jp/entry/image/https://webdesign-trends.net/entry/3632" class="bc-hatebu" />
+    </p>
+  </div>
+</div>
+
+<h4 id="design">design</h4>
+
+<div class="bc-1">
+  <div class="bc-2">
+    <a href="https://sole-color-blog.com/blog/668/" class="bc-3">
+	  <img src="https://sole-color-blog.com/manage/wp-content/uploads/2016/04/Social-Icons-again.gif" class="bc-4" />
+	</a>
+  </div>
+  <p style="margin:0;">
+    <a href="https://sole-color-blog.com/blog/668/" class="bc-5">コピペOK! 個性的なSNSボタン／シェアボタンのデザインまとめ | それからデザイン スタッフブログ</a>
+  </p>
+  <p class="bc-6">ブログやwebマガジン、キャンペーンサイトまでさまざまなサイトに設置されるFacebookやTwitterなどのSNSボタン／シェアボタン。今回はフロンドエンド...</p>
+  <div class="bc-7">
+    <p class="bc-8">
+      <img src="http://favicon.hatena.ne.jp/?url=https://sole-color-blog.com/blog/668/" class="bc-favicon" />sole-color-blog.com<img src="http://b.hatena.ne.jp/entry/image/https://sole-color-blog.com/blog/668/" class="bc-hatebu" />
+    </p>
+  </div>
+</div>
+
+<p data-embed-version="2" data-height="300" data-preview="false" data-theme-id="11473" data-default-tab="result" data-theme="11473" data-user="berkaltiok" data-slug-hash="LpbLmx" class="codepen">See the <a href="https://codepen.io/berkaltiok/pen/LpbLmx">pen</a> on <a href="//codepen.io">CodePen</a>.</p>
+<script async="" src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+<p data-embed-version="2" data-height="300" data-preview="false" data-theme-id="11473" data-default-tab="result" data-theme="11473" data-user="sderoij" data-slug-hash="oxoMRW" class="codepen">See the <a href="https://codepen.io/sderoij/pen/oxoMRW">pen</a> on <a href="//codepen.io">CodePen</a>.</p>
+<script async="" src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+<h3 id="font-awesome">font-awesome</h3>
+
+<div class="bc-1">
+  <div class="bc-2">
+    <a href="https://whiskers.nukos.kitchen/2014/10/11/jekyll_liquid_tag_font_awesome.html" class="bc-3">
+	  <img src="http://whiskers.nukos.kitchen/assets/images/ogp.png" class="bc-4" />
+	</a>
+  </div>
+  <p style="margin:0;">
+    <a href="https://whiskers.nukos.kitchen/2014/10/11/jekyll_liquid_tag_font_awesome.html" class="bc-5">[Jekyll][Ruby]jekyllでFontAwesomeアイコンを表示するLiquid Tagを作った</a>
+  </p>
+  <p class="bc-6">jekyllの記事内でHTML書きたくないなーって時にLiquid Tagを作る方法の紹介です。今回はFont Awesomeアイコンを表示するLiquid Tagプラグインを作ってみました。</p>
+  <div class="bc-7">
+    <p class="bc-8">
+      <img src="http://favicon.hatena.ne.jp/?url=https://whiskers.nukos.kitchen/2014/10/11/jekyll_liquid_tag_font_awesome.html" class="bc-favicon" />whiskers.nukos.kitchen<img src="http://b.hatena.ne.jp/entry/image/https://whiskers.nukos.kitchen/2014/10/11/jekyll_liquid_tag_font_awesome.html" class="bc-hatebu" />
+    </p>
+  </div>
+</div>
+
+
+  </div>
+</article>
+
+    </div>
+    <div class="sns-share">
+  <ul class="sns-share__list">
+    <li class="sns-share__item">
+      <a
+        class="sns-share__btn sns-share__btn--fb"
+        href="https://www.facebook.com/sharer/sharer.php?u=https://sat0ma014.github.io/guide/"
+        target="_blank"
+        ><i class="fa fa-facebook fa-big"></i
+      ></a>
+    </li>
+    <li class="sns-share__item">
+      <a
+        class="sns-share__btn sns-share__btn--tw"
+        href='https://twitter.com/intent/tweet?url=https://sat0ma014.github.io/guide/&text=Guide for Jekyll'
+        target="_blank"
+        ><i class="fa fa-twitter fa-big"></i
+      ></a>
+    </li>
+    <li class="sns-share__item">
+      <a
+        class="sns-share__btn sns-share__btn--line"
+        href='http://line.me/R/msg/text/?Guide for Jekyll\nhttps://sat0ma014.github.io/guide/'
+        target="_blank"
+        >LINE</a
+      >
+    </li>
+    <li class="sns-share__item">
+      <a
+        class="sns-share__btn sns-share__btn--hb"
+        href="http://b.hatena.ne.jp/add?mode=confirm&url=https://sat0ma014.github.io/guide/&title=Guide for Jekyll"
+        target="_blank"
+        >B!</a
+      >
+    </li>
+    <li class="sns-share__item">
+      <a
+        class="sns-share__btn sns-share__btn--po"
+        href="http://getpocket.com/edit?url=https://sat0ma014.github.io/guide/&title=Guide for Jekyll"
+        target="_blank"
+        ><i class="fa fa-get-pocket fa-big"></i
+      ></a>
+    </li>
+    <li class="sns-share__item">
+      <a
+        class="sns-share__btn sns-share__btn--copy js-url-copy"
+        data-clipboard-text='Guide for Jekyll\nhttps://sat0ma014.github.io/guide/'
+        ><i class="fa fa-clipboard"></i> copy</a
+      >
+    </li>
+  </ul>
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    new ClipboardJS('.js-url-copy')
+  })
+</script>
+
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          
+<a href="mailto:satomakoto@protonmail.com"><i class="svg-icon email"></i></a>
+
+
+<a href="https://github.com/sat0ma014"><i class="svg-icon github"></i></a>
+<a href="https://instagram.com/sat0ma014"><i class="svg-icon instagram"></i></a>
+<a href="https://www.linkedin.com/in/まこと-さとう-13aa541b6"><i class="svg-icon linkedin"></i></a>
+<a href="https://www.pinterest.com/sat0ma014"><i class="svg-icon pinterest"></i></a>
+<a href="/feed.xml"><i class="svg-icon rss"></i></a>
+<a href="https://www.twitter.com/satomakoto14"><i class="svg-icon twitter"></i></a>
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+  </body>
+</html>
